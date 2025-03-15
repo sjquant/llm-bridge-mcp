@@ -46,7 +46,10 @@ cd llm-bridge-mcp
 2. Install [uv](https://github.com/astral-sh/uv) (if not already installed):
 
 ```bash
-# On macOS and Linux
+# On macOS
+brew install uv
+
+# On Linux
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # On Windows
@@ -82,6 +85,42 @@ Add a server entry to your Claude Desktop configuration file or `.cursor/mcp.jso
       "ANTHROPIC_API_KEY": "your_anthropic_api_key",
       "GOOGLE_API_KEY": "your_google_api_key",
       "DEEPSEEK_API_KEY": "your_deepseek_api_key"
+    }
+  }
+}
+```
+
+### Troubleshooting
+
+#### Common Issues
+
+##### 1. "spawn uvx ENOENT" Error
+
+This error occurs when the system cannot find the `uvx` executable in your PATH. To resolve this:
+
+**Solution: Use the full path to uvx**
+
+Find the full path to your uvx executable:
+
+```bash
+# On macOS/Linux
+which uvx
+
+# On Windows
+where.exe uvx
+```
+
+Then update your MCP server configuration to use the full path:
+
+```json
+"mcpServers": {
+  "llm-bridge": {
+    "command": "/full/path/to/uvx",  // Replace with your actual path
+    "args": [
+      "llm-bridge-mcp"
+    ],
+    "env": {
+      // ... your environment variables
     }
   }
 }
