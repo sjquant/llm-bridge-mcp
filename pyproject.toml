@@ -1,0 +1,28 @@
+[project]
+name = "llm_bridge_mcp"
+version = "0.1.0"
+description = "A simple MCP server that provides a unified interface to various LLM providers using Pydantic AI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.10.6",
+    "pydantic-ai>=0.0.39",
+    "mcp[cli]>=0.1.0",
+    "python-dotenv>=1.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.396",
+    "ruff>=0.11.0",
+]
+
+[tool.ruff]
+target-version = "py311"
+
+[project.scripts]
+llm-bridge-mcp = "llm_bridge_mcp:main"
+
+[build-system]
+requires = ['hatchling', 'hatch-fancy-pypi-readme>=22.5.0']
+build-backend = 'hatchling.build'

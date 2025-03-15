@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "strict",
+  "ruff.importStrategy": "fromEnvironment"
+}
