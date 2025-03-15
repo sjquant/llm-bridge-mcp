@@ -1,0 +1,8 @@
+.vscode
+.venv
+.env
+.cursorignore
+.gitignore
+.git
+.github
+uv.lock
