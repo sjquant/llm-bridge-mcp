@@ -1,6 +1,6 @@
 [project]
 name = "llm_bridge_mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple MCP server that provides a unified interface to various LLM providers using Pydantic AI"
 readme = "README.md"
 requires-python = ">=3.11"

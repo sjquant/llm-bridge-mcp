@@ -41,7 +41,7 @@ async def run_llm(
         default="",
         description="Optional system prompt to guide the model's behavior",
     ),
-) -> LLMResponse:
+) -> str:
     """Run a prompt through an LLM and return the response."""
     agent = Agent(
         model=model_name,
@@ -54,12 +54,13 @@ async def run_llm(
             "max_tokens": max_tokens,
         },
     )
-    return LLMResponse(
-        content=response.data,
+    res = LLMResponse(
+        content="안녕하세요",
         model_name=model_name,
         usage=response.usage(),
         temperature=temperature,
     )
+    return res.model_dump_json()
 
 
 def main():
