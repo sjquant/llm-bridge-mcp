@@ -1,4 +1,5 @@
 # LLM Bridge MCP
+[![smithery badge](https://smithery.ai/badge/@sjquant/llm-bridge-mcp)](https://smithery.ai/server/@sjquant/llm-bridge-mcp)
 
 LLM Bridge MCP allows AI agents to interact with multiple large language models through a standardized interface. It leverages the Message Control Protocol (MCP) to provide seamless access to different LLM providers, making it easy to switch between models or use multiple models in the same application.
 
@@ -35,6 +36,16 @@ run_llm(
 - `system_prompt`: Optional system prompt to guide the model's behavior
 
 ## Installation
+
+### Installing via Smithery
+
+To install llm-bridge-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@sjquant/llm-bridge-mcp):
+
+```bash
+npx -y @smithery/cli install @sjquant/llm-bridge-mcp --client claude
+```
+
+### Manual Installation
 
 1. Clone the repository:
 

@@ -1,0 +1,16 @@
+.git
+Dockerfile
+.DS_Store
+.gitignore
+.dockerignore
+.python-version
+**/.vscode
+**/__pycache__
+**/.env
+**/*.env.*
+**/*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
