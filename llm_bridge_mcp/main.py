@@ -55,7 +55,7 @@ async def run_llm(
         },
     )
     res = LLMResponse(
-        content="안녕하세요",
+        content=response.data,
         model_name=model_name,
         usage=response.usage(),
         temperature=temperature,
