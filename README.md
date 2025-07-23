@@ -3,6 +3,10 @@
 
 LLM Bridge MCP allows AI agents to interact with multiple large language models through a standardized interface. It leverages the Message Control Protocol (MCP) to provide seamless access to different LLM providers, making it easy to switch between models or use multiple models in the same application.
 
+<a href="https://glama.ai/mcp/servers/@sjquant/llm-bridge-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@sjquant/llm-bridge-mcp/badge" alt="LLM Bridge MCP server" />
+</a>
+
 ## Features
 
 - Unified interface to multiple LLM providers:
